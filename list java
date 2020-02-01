@@ -1,0 +1,43 @@
+package exale;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+
+public class sx2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		List<Integer> l=new LinkedList<Integer>();
+		
+		l.add(1);
+		l.add(2);
+		l.add(3);
+		l.add(4);
+		Scanner sc=new Scanner(System.in);
+			String s;	;
+		int q=sc.nextInt();
+		for(int i=0;i<q;i++)
+		{
+			System.out.println("enter either insert or delete");
+			s=sc.nextLine();
+			
+			if(s.equals("insert"))
+			{System.out.println("enter inex and item");
+			int index=sc.nextInt();
+			int item=sc.nextInt();
+			l.add(index, item);
+			}
+			
+		}
+		for(int i=0;i<l.size();i++)
+			{
+			System.out.println(l.get(i));
+		}
+		
+		
+	}
+
+}
